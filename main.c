@@ -371,7 +371,7 @@ static inline void put_trie(struct trie_t* self, const char* cstring)
                 ALIGN_TRIE_NODE
             );
 
-            memset(node, 0, sizeof(trie_node));
+            memset(next, 0, sizeof(trie_node));
             node->m_children[(*current_char) - 'a'] = next;
         }
         else 
